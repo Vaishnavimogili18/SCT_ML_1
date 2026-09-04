@@ -1,39 +1,46 @@
-# House Price Prediction using Linear Regression
+# 🐱🐶 Cat vs Dog Image Classification using SVM
 
-## Project Description
+## 📌 Project Overview
 
-This project uses Linear Regression to predict house prices based on:
+This project classifies images as either **Cat** or **Dog** using a Machine Learning approach.
 
-- Square footage
-- Number of bedrooms
-- Number of bathrooms
+The project uses **Histogram of Oriented Gradients (HOG)** for feature extraction and an **SVM (Support Vector Machine)** with an RBF kernel for classification.
 
-## Technologies Used
+The best model achieved an accuracy of **75%** on the test dataset.
+
+---
+
+## 🎯 Problem Statement
+
+Given an input image, predict whether the image contains a:
+
+- 🐱 Cat
+- 🐶 Dog
+
+This is a binary image classification problem.
+
+---
+
+## 🛠️ Technologies Used
 
 - Python
-- Pandas
+- OpenCV
+- NumPy
+- Matplotlib
+- Scikit-image
 - Scikit-learn
+- Support Vector Machine (SVM)
+- GridSearchCV
 
-## Machine Learning Algorithm
+---
 
-Linear Regression
+## 📂 Dataset
 
-## Model Evaluation
+The project uses the **Kaggle Cats vs Dogs dataset**.
 
-The model is evaluated using:
+The dataset contains two classes:
 
-- Mean Squared Error (MSE)
-- R² Score
-
-## Result
-
-R² Score: 0.97536
-
-The model achieved an R² score of approximately 97.54% on the test dataset.
-
-## How to Run
-
-1. Install the required libraries:
-
-```bash
-pip install -r requirements.txt
+```text
+PetImages/
+├── Cat/
+└── Dog/
